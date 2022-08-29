@@ -28,5 +28,5 @@ console.log(appleJuice)
 const appleOrange = fruitProcessor(4,7)
 console.log(appleOrange)
 
-const appleOranges =  fruitProcessor(8,3)
+const appleOranges =  fruitProcessor(5,3)
 console.log(appleOranges)
