@@ -5,7 +5,7 @@ let hasDriversLicence = false
 const passTest = true
 
 if (passTest) hasDriversLicence = true
-if (hasDriversLicence) console.log("i can drive")
+if (hasDriversLicence) console.log("i can drive car")
 
 //const interface = 'Audio'
 //-----Functions------
