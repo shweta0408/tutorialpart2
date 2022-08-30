@@ -30,3 +30,6 @@ console.log(appleOrange)
 
 const appleOranges =  fruitProcessor(5,3)
 console.log(appleOranges)
+
+const appleOrangesFruit =  fruitProcessor(5,9)
+console.log(appleOrangesFruit)
