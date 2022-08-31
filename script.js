@@ -109,4 +109,36 @@ const yearsUntilRetirement = function (birthYear, firstName)
  console.log(yearsUntilRetirement(2004,'Shweta'))
  console.log(yearsUntilRetirement(1940,'testPeople'))
 
- 
+
+//coding challenge
+
+
+const calcAverage = (score1, score2, score3) => (score1+score2+score3)/3
+console.log(calcAverage(2,3,7))
+
+const scoreDolphins = calcAverage(44,23,71)
+const scoreKoalas = calcAverage(65,54,49)
+
+console.log(scoreDolphins,scoreKoalas)
+
+const  checkWinner = function(avgDolphins, avgKoalas)
+{
+   if (avgDolphins >= 2* avgKoalas){
+        console.log(`winner is Dolphin with ${avgDolphins} vs ${avgKoalas}`)
+   } else if (avgKoalas >= 2* avgDolphins){
+      console.log(`winner is koala with ${avgKoalas} vs. ${avgDolphins}`)
+   } else {
+    console.log("no one is winner")
+   }
+
+}
+
+checkWinner(scoreDolphins, scoreKoalas)
+checkWinner(700,114)
+
+
+
+
+
+
+
