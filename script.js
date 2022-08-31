@@ -51,7 +51,7 @@
 //console.log(calcBirth)
 
 
-//ARROW FUNCTION
+/*ARROW FUNCTION
  const calcAge = birthYear => 2022-birthYear
  const myAge = calcAge(2004)
  console.log(myAge)
@@ -65,5 +65,48 @@
 
  console.log(yearsUntilRetirement(2004,'Shweta'))
  console.log(yearsUntilRetirement(2002,'Pragya'))
- 
 
+ */
+
+ /*
+ function cutFruitPieces(fruit){
+    return fruit * 4
+ } 
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples)
+    const orangesPieces = cutFruitPieces(oranges)
+
+const juice = `Juice with ${apples} apples cut into ${applePieces} pieces
+ and ${oranges} oranges cut into ${orangesPieces} pieces`
+
+ return juice
+ }
+
+ console.log(fruitProcessor(3,2))
+*/
+
+const calcAge = function(birthYear) {
+    return 2022-birthYear
+}
+
+const yearsUntilRetirement = function (birthYear, firstName)
+{
+    const age = calcAge(birthYear)
+    const retirement = 65 - age
+
+     if (retirement >0){
+        return retirement
+     }else {
+        return -1
+     }
+
+
+//return retirement
+   // return `${firstName} retires in ${retirement} years `
+ }
+
+ console.log(yearsUntilRetirement(2004,'Shweta'))
+ console.log(yearsUntilRetirement(1940,'testPeople'))
+
+ 
