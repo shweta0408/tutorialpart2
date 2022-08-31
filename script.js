@@ -33,3 +33,19 @@ console.log(appleOranges)
 
 const appleOrangesFruit =  fruitProcessor(5,2)
 console.log(appleOrangesFruit)
+
+//FUNCTION DECLARATION
+function calcAge(birthYear){
+    return 2022 - birthYear
+}
+const calcBirth1 = calcAge(2006)
+
+//FUNCTION EXPRESSION
+const calcBirth = function (birthYear){
+    return 2022-birthYear
+}
+const calcBirth4 = calcBirth(2004)
+console.log(calcBirth4, calcBirth1)
+
+//const calcBirth = calcAge(2004)
+//console.log(calcBirth)
