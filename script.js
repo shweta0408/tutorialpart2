@@ -228,6 +228,45 @@ const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
 const totals = [bills[0]+tip[0], bills[1]+tip[1], bills[2]+tip[2]]
 console.log(bills,tip, totals)
 
+//OBJECTS
+const ShwetaArray = [
+    'Shweta',
+    'Mishra',
+    2022-2004,
+    'Software developer'
+    ['Rob', 'nini', 'nash']
+]
+console.log(ShwetaArray)
 
+const ShwetaObject = {
+     firstName : 'Shweta',
+      lastName : 'Mishra',
+      age: 2022-2004,
+      job:  'Softwaredeveloper',
+      friends : ['Rob', 'nini', 'nash']
+}
 
+// console.log(ShwetaObject)
+ console.log(ShwetaObject.lastName) // dot notation
+// console.log(ShwetaObject['lastName'])
 
+const nameKey = 'Name'
+console.log(ShwetaObject['first' + nameKey]) // bracket notation
+console.log(ShwetaObject['last' + nameKey])
+
+const interestedIn = prompt('What do you want to know about Shweta? Choose')
+console.log(ShwetaObject[interestedIn])
+
+if(ShwetaObject[interestedIn]){
+    console.log(ShwetaObject[interestedIn])
+}else {
+    console.log('wrong request')
+}
+
+ShwetaObject.location = 'India'
+ShwetaObject['Twiiter'] = 'Shweta0408'
+console.log(ShwetaObject)
+
+//
+console.log(`${ShwetaObject.firstName} has  ${ShwetaObject.friends.length} friends
+ and her best friend is ${ShwetaObject.friends[0]}`)
