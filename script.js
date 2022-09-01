@@ -270,7 +270,7 @@ console.log(ShwetaObject)
 console.log(`${ShwetaObject.firstName} has  ${ShwetaObject.friends.length} friends
  and her best friend is ${ShwetaObject.friends[0]}`)
 
-*/
+
 
 const Shweta = {
     firstName: 'Shweta',
@@ -298,6 +298,61 @@ and she has ${this.hasDriversLicence ? 'drivers licence' : 'no drivers licence'}
 
 console.log(Shweta.calcAge())
 console.log(Shweta.age)
-
 console.log(Shweta.getSummary())
+*/
+
+//coding challenges
+
+const markMiller = {
+     firstName: 'Mark',
+     lastName: 'Miller',
+     mass: 78 ,
+     height: 1.68,
+
+     calcBMI:  function(){
+       this.bmi = this.mass/this.height**2
+       return this.bmi
+     }
+
+
+}
+
+
+const johnMiller ={
+    firstName: 'John',
+    lastName: 'Miller',
+    mass: 92 ,
+    height: 1.95 ,
+
+    calcBMI:  function(){
+        this.bmi = this.mass/this.height**2
+        return this.bmi
+      }
+ 
+ 
+
+}
+
+const markBmi =  markMiller.calcBMI()
+console.log(markMiller.bmi)
+
+const johnBmi = johnMiller.calcBMI()
+console.log(johnMiller.bmi)
+
+if(markBmi > johnBmi){
+    console.log(`${markMiller.firstName} ${markMiller.lastName} has higher BMI`)   
+}
+else {
+    console.log(`${johnMiller.firstName} ${johnMiller.lastName} has higher BMI`)   
+}
+
+
+
+
+
+
+
+
+
+
 
