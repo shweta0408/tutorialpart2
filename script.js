@@ -186,7 +186,7 @@ console.log(agee1)
 
 const ages = [calcuAge(year[3])]
 
-*/
+
 
 
 const friends = ["Michel", "Steve", "Rob"]
@@ -267,6 +267,37 @@ ShwetaObject.location = 'India'
 ShwetaObject['Twiiter'] = 'Shweta0408'
 console.log(ShwetaObject)
 
-//
 console.log(`${ShwetaObject.firstName} has  ${ShwetaObject.friends.length} friends
  and her best friend is ${ShwetaObject.friends[0]}`)
+
+*/
+
+const Shweta = {
+    firstName: 'Shweta',
+    lastName: 'Mishra',
+    birthYear: 2004,
+    job: 'Software Engineer',
+    friends: ['Pragya','Lily','Jerry'],
+    hasDriversLicence: true,
+
+   //calcAge: function(birthYear){
+   // return 2037 - birthYear
+  // }
+
+    calcAge: function() {
+        this.age = 2022 - this.birthYear
+        return this.age
+    },
+
+   getSummary: function() {
+       return `${this.firstName} is a ${this.calcAge()} years of ${this.job} 
+and she has ${this.hasDriversLicence ? 'drivers licence' : 'no drivers licence'}`
+   }
+
+}
+
+console.log(Shweta.calcAge())
+console.log(Shweta.age)
+
+console.log(Shweta.getSummary())
+
