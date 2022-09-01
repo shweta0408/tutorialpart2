@@ -158,10 +158,7 @@ const checkWinner = function (avgDolphins,avgKoalas){
 
 checkWinner(scoreDolphins,scoreKoala)
 
-*/
 
-const friends = ["Michel", "Steve", "Rob"]
-console.log(friends)
 
 const years = new Array(1991, 1992, 1993,1994)
 
@@ -172,14 +169,53 @@ console.log(friends[friends.length -1])
 friends[2] = 'Vinnie'
 console.log(friends)
 
-const Shweta = ['Shweta', 'Mishra', 2022-2004]
+const Shweta = ['Shweta', 'Mishra', 2022-2004,'teacher',friends]
+console.log(Shweta)
+console.log(Shweta.length)
+
+//Exercise
+ 
+const calcuAge = function(birthYears) {
+    return 2037 - birthYears
+}
+const year = [1990, 1967, 2002, 2010]
 
 
+const agee1 = calcuAge(year[3])
+console.log(agee1)
+
+const ages = [calcuAge(year[3])]
+
+*/
 
 
+const friends = ["Michel", "Steve", "Rob"]
+friends.push('Mike') //ADDS to the end
+console.log(friends)
 
+friends.unshift('sherry') //ADDS to the begining
+console.log(friends)
 
+friends.pop() //REMOVE last element
+console.log(friends)
 
+friends.shift() //REMOVE first element
+console.log(friends)
+
+console.log(friends.indexOf('Steve'))
+console.log(friends.indexOf('lily')) // -1 output
+
+console.log(friends.includes('Steve')) // true
+console.log(friends.includes('lily')) // false output 
+
+// it does not do type coercion means number 23
+// is different from  string '23'
+
+if(friends.includes('Rob')){
+    console.log('You have a friend called Rob')
+}
+
+//coding challenge 
 
 
 
