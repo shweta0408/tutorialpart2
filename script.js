@@ -394,7 +394,7 @@ for ( let i =0 ; i< ShwetaArray.length ; i++){
 
     console.log(ShwetaArray[i], typeof ShwetaArray[i])
 }
-*/
+
 
 const ShwetaArray = [
     'Shweta',
@@ -418,6 +418,28 @@ for (let excercise = 1 ; excercise < 4 ; excercise++){
     }
 }
 
+
+
+for(let rep=1 ; rep<=10 ; rep++){
+    console.log(`Lifting weights repetition ${rep}`)
+}
+*/
+
+let rep = 1;
+while(rep <=10){
+    console.log(`WHILE: Lifting weights repetition ${rep}`)
+    rep++
+}
+
+
+let dice;
+while(dice !==6){
+ dice = Math.trunc(Math.random()*6) + 1
+ console.log(`You rolled ${dice}`)
+ if (dice===6){
+    console.log('loop is about to end')
+ }
+}
 
 
 
