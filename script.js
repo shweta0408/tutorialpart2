@@ -299,7 +299,7 @@ and she has ${this.hasDriversLicence ? 'drivers licence' : 'no drivers licence'}
 console.log(Shweta.calcAge())
 console.log(Shweta.age)
 console.log(Shweta.getSummary())
-*/
+
 
 //coding challenges
 
@@ -345,6 +345,25 @@ if(markBmi > johnBmi){
 else {
     console.log(`${johnMiller.firstName} ${johnMiller.lastName} has higher BMI`)   
 }
+
+*/
+
+
+
+for(let i=1 ; i<=10 ; i++){
+    console.log(`Lifting weights repetition ${i}`)
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
