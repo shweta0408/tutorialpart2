@@ -346,7 +346,7 @@ else {
     console.log(`${johnMiller.firstName} ${johnMiller.lastName} has higher BMI`)   
 }
 
-*/
+
 
 
 
@@ -355,6 +355,29 @@ for(let i=1 ; i<=10 ; i++){
 }
 
 
+const types = []
+
+const ShwetaArray = [
+    'Shweta',
+    'Mishra',
+    2022-2004,
+    'Teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+]
+
+for (i=0 ; i<ShwetaArray.length ; i++){
+    console.log(ShwetaArray[i], typeof ShwetaArray[i], types)
+    types.push(typeof ShwetaArray[i])
+}
+*/
+const years = [1991, 2007, 1969, 2020,1995]
+const ages = []
+
+for (let i=0 ; i<years.length ; i++){
+   ages.push(2022- years[i])
+}
+console.log(ages)
 
 
 
