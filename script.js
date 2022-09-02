@@ -354,7 +354,7 @@ for(let i=1 ; i<=10 ; i++){
     console.log(`Lifting weights repetition ${i}`)
 }
 
-
+*/
 const types = []
 
 const ShwetaArray = [
@@ -370,17 +370,30 @@ for (i=0 ; i<ShwetaArray.length ; i++){
     console.log(ShwetaArray[i], typeof ShwetaArray[i], types)
     types.push(typeof ShwetaArray[i])
 }
-*/
+
 const years = [1991, 2007, 1969, 2020,1995]
 const ages = []
 
+console.log('only numbers')
 for (let i=0 ; i<years.length ; i++){
-   ages.push(2022- years[i])
+     ages.push(2022- years[i])
 }
 console.log(ages)
 
+// continue and break
+console.log('------only string------')
+for ( let i =0 ; i< ShwetaArray.length ; i++){
+    if(typeof ShwetaArray[i] !== 'string') continue
 
+    console.log(ShwetaArray[i], typeof ShwetaArray[i])
+}
 
+console.log('------break with number------')
+for ( let i =0 ; i< ShwetaArray.length ; i++){
+    if(typeof ShwetaArray[i] === 'number') break
+
+    console.log(ShwetaArray[i], typeof ShwetaArray[i])
+}
 
 
 
