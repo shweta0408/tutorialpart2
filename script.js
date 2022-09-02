@@ -354,7 +354,7 @@ for(let i=1 ; i<=10 ; i++){
     console.log(`Lifting weights repetition ${i}`)
 }
 
-*/
+
 const types = []
 
 const ShwetaArray = [
@@ -394,8 +394,29 @@ for ( let i =0 ; i< ShwetaArray.length ; i++){
 
     console.log(ShwetaArray[i], typeof ShwetaArray[i])
 }
+*/
+
+const ShwetaArray = [
+    'Shweta',
+    'Mishra',
+    2022-2004,
+    'Teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+]
+
+for( let i=ShwetaArray.length - 1; i>=0 ; i-- ){
+    console.log(i, ShwetaArray[i])
+}
 
 
+for (let excercise = 1 ; excercise < 4 ; excercise++){
+    console.log(`-----Starting Excercise ${excercise}-------`)
+
+    for (let rep = 1 ; rep < 6 ;  rep++){
+        console.log(`Lifting Weight Repetition ${rep}`)
+    }
+}
 
 
 
